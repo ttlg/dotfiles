@@ -1,0 +1,43 @@
+alias reload='exec $SHELL -l'
+alias path='echo $PATH | tr -s ":" "\n"'
+alias ks="ls"
+alias sl="ls"
+# alias ls="ls --color -F"
+alias l="ls"
+alias ls="ls -G"
+alias ll="ls -lG"
+alias la="ls -laG"
+alias mv="mv -i"
+alias cp="cp -i"
+alias g="git"
+alias gi="git"
+alias t="tmux"
+alias tm="tmux"
+alias tmu="tmux"
+
+alias ~="cd ~"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
+alias .......="cd ../../../../../.."
+
+alias ccat="ccat --color=always --bg=dark"
+alias cc="ccat --color=always --bg=dark"
+alias today="date +%Y%m%d"
+
+# Shortcuts
+alias dt="cd ~/Desktop"
+alias dl="cd ~/Downloads"
+
+################################
+# Advanced
+################################
+alias e="emacs"
+alias dev="npm run dev"
+alias gen="npm run generate"
+alias v="vim"
+alias vi="vim"
+alias gh='hub browse $(ghq list | grep "github.com" | peco --prompt "[github]" | cut -d "/" -f 2,3)'
+alias gist="gist -c -o -p"

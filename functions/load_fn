@@ -1,1 +1,1 @@
-for f (./functions/*.fn) source "${f}"
+for f (${DOTPATH}/functions/*.fn) source "${f}"

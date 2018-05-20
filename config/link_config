@@ -1,0 +1,4 @@
+
+ln -sf ~/dotfiles/softconfig/vim.conf ~/.vimrc
+ln -sf ~/dotfiles/softconfig/tmux.conf ~/.tmux.conf
+

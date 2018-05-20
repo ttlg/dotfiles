@@ -4,6 +4,7 @@
 source ./aliases
 source ./prompt
 source ./history
+source ./functions/load_fn
 
 ################################
 #### source

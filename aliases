@@ -25,14 +25,14 @@ alias .......="cd ../../../../../.."
 alias dt="cd ~/Desktop"
 alias dl="cd ~/Downloads"
 
+##### Advanced
+alias wx="curl -4 wttr.in/Tokyo"
+alias edithosts="sudo vi /private/etc/hosts"
+alias dev="npm run dev"
+alias gen="npm run generate"
 alias ccat="ccat --color=always --bg=dark"
 alias cc="ccat --color=always --bg=dark"
 alias today="date +%Y%m%d"
-
-##### Advanced
-alias wx="curl -4 wttr.in/Tokyo"
-alias dev="npm run dev"
-alias gen="npm run generate"
 
 ### git
 alias g="git"
@@ -46,5 +46,4 @@ alias gcm="git commit -m $1"
 alias gco="git checkout $*"
 alias gp="git push $*"
 alias gl="git log $*"
-
 

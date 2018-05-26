@@ -1,0 +1,12 @@
+
+function cdrepo () {
+    local val=`ls ~/repos | peco;`
+	if [ -n "$val" ]; then
+		cd ~/repos/${val}
+	fi
+}
+
+zle -N cdrepo
+bindkey '^p' cdrepo
+
+

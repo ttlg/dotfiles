@@ -1,12 +1,9 @@
-
-function cdrepo () {
+function select-repo () {
     local val=`ls ~/repos | peco;`
 	if [ -n "$val" ]; then
 		cd ~/repos/${val}
 	fi
 }
-
-zle -N cdrepo
-bindkey '^p' cdrepo
-
+zle -N select-repo
+bindkey '^p' select-repo
 

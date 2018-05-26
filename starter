@@ -12,3 +12,19 @@ source ${DOTPATH}/pathes
 if [ -e ${DOTPATH}/private/.zshrc ];then
     source ${DOTPATH}/private/.zshrc
 fi
+
+
+if [ -e ${DOTPATH}/zplug ];then
+	source ${DOTPATH}/zplug/init.zsh
+	zplug 'zsh-users/zsh-autosuggestions'
+
+	if ! zplug check --verbose; then
+	  printf 'Install? [y/N]: '
+	  if read -q; then
+		echo; zplug install
+	  fi
+	fi
+
+	zplug load --verbose
+fi
+

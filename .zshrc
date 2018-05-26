@@ -1,5 +1,7 @@
-export DOTPATH=${HOME}/dotfiles
+autoload -Uz add-zsh-hock
+autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
 
+export DOTPATH=${HOME}/dotfiles
 source ${DOTPATH}/config/link_config
 source ${DOTPATH}/aliases
 source ${DOTPATH}/prompt

@@ -2,6 +2,7 @@ alias reload='exec $SHELL -l'
 alias path='echo $PATH | tr -s ":" "\n"'
 alias ks="ls"
 alias sl="ls"
+alias c="cd"
 alias l="ls"
 alias ls="ls -G"
 alias ll="ls -lG"

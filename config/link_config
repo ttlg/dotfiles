@@ -1,5 +1,0 @@
-
-ln -sf ~/dotfiles/config/vim.conf        ~/.vimrc
-ln -sf ~/dotfiles/config/tmux.conf       ~/.tmux.conf
-ln -sf ~/dotfiles/config/vscode.setting  ~/Library/Application\ Support/Code/User/settings.json 
-

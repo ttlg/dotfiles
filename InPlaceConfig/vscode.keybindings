@@ -1,0 +1,16 @@
+// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+[
+    {"key": "ctrl+i", "command": "macros.commentDown"}, 
+    // toglle terminal 
+    { "key": "ctrl+alt+t", "command": "workbench.action.terminal.toggleTerminal"}, 
+    { "key": "ctrl+shift+t", "command": "workbench.action.terminal.runSelectedText"}, 
+
+    // toggle focus terminal 
+    { "key": "ctrl+j", "command": "workbench.action.terminal.focus"}, 
+    { "key": "ctrl+j", "command": "workbench.action.focusActiveEditorGroup", "when": "terminalFocus"}, 
+    // move terminal 
+    { "key": "ctrl+l", "command": "workbench.action.terminal.focusNext", "when": "terminalFocus" }, 
+    { "key": "ctrl+h", "command": "workbench.action.terminal.focusPrevious", "when": "terminalFocus" }, 
+    // paste 
+    { "key": "ctrl+v", "command": "workbench.action.terminal.paste", "when": "terminalFocus" }
+]

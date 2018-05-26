@@ -1,0 +1,14 @@
+
+function select-edit () {
+	if [ -f .gitignore ]; then
+	  local selected_dir=$(git ls-files | peco)
+	else
+	  local selected_dir=$(find . -type f | peco)
+	fi
+    if [ -n "$selected_dir" ]; then
+        BUFFER="vim ${selected_dir}"
+        zle accept-line
+    fi
+}
+zle -N select-edit
+bindkey '^v' select-edit

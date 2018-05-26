@@ -35,6 +35,7 @@ alias yanr="yarn"
 alias ccat="ccat --color=always --bg=dark"
 alias cc="ccat --color=always --bg=dark"
 alias today="date +%Y%m%d"
+#alias mdview="markdown $1 | lynx -stdin"
 
 ### git
 alias g="git"

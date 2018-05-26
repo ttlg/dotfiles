@@ -13,8 +13,9 @@ alias tm="tmux"
 alias tmu="tmux"
 alias v="vim"
 alias vi="vim"
-
-### cd
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 alias ~="cd ~"
 alias ..="cd .."
 alias ...="cd ../.."
@@ -42,6 +43,7 @@ alias gs="git status"
 alias gb="git branch"
 alias gd="git diff $*"
 alias ga="git add $*"
+alias ga.="git add ."
 alias gc="git commit $*"
 alias gcm="git commit -m $1"
 alias gco="git checkout $*"

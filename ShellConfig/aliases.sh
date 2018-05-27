@@ -37,12 +37,15 @@ alias gen="npm run generate"
 alias yanr="yarn"
 alias ccat="ccat --color=always --bg=dark"
 alias cc="ccat --color=always --bg=dark"
+alias icat="imgcat $*"
 alias today="date +%Y%m%d"
 alias vs="code ."
 alias editalias="vim ${DOTPATH}/ShellConfig/aliases.sh"
 alias loadalias="source ${DOTPATH}/ShellConfig/aliases.sh"
 alias fdeploy="firebase deploy"
-#alias mdview="markdown $1 | lynx -stdin"
+function mdview(){
+	markdown $1 | lynx -stdin
+}
 
 ### git
 alias g="git"

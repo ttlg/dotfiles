@@ -6,7 +6,7 @@ export DOTPATH=${HOME}/dotfiles
 
 for f (${DOTPATH}/functions/*.zsh) source "${f}"
 for f (${DOTPATH}/ShellConfig/*.sh) source "${f}"
-sh ${DOTPATH}/InPlaceConfig/link_config.sh
+sh ${DOTPATH}/in-place-config/link_config.sh
 source ${DOTPATH}/load-zplug.sh
 
 if [ -e ${DOTPATH}/private/.zshrc ];then

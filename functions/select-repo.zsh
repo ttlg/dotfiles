@@ -1,5 +1,5 @@
 function select-repo () {
-    local val=`ls ~/repos | peco;`
+    local val=`ls ~/repos | ${SELECT_METHOD} --prompt "cd repos>";`
 	if [ -n "$val" ]; then
 		cd ~/repos/${val}
 	fi

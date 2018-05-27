@@ -38,6 +38,10 @@ alias yanr="yarn"
 alias ccat="ccat --color=always --bg=dark"
 alias cc="ccat --color=always --bg=dark"
 alias today="date +%Y%m%d"
+alias vs="code ."
+alias editalias="vim ${DOTPATH}/ShellConfig/aliases.sh"
+alias loadalias="source ${DOTPATH}/ShellConfig/aliases.sh"
+alias fdeploy="firebase deploy"
 #alias mdview="markdown $1 | lynx -stdin"
 
 ### git

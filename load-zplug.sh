@@ -14,3 +14,5 @@ if [ -e ${DOTPATH}/zplug ];then
 
 	zplug load --verbose
 fi
+
+bindkey '^y' autosuggest-execute

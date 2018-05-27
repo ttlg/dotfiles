@@ -20,8 +20,9 @@ my_preexec () {
 }
 my_precmd () {
   if [ ${?} = 127 -a -n "${_EXECUTING_CMD}" ];then
+    local pre_wd=`pwd`
     cd ${_EXECUTING_CMD} # enhancd cd
-    if [ $? -eq 0 ]; then
+    if [ $? -eq 0 -a ${pre_wd} != `pwd` ]; then
       echo '\e[32msuccess change directory\e[m: '`pwd`
       ls
     fi

@@ -40,8 +40,8 @@ alias cc="ccat --color=always --bg=dark"
 alias icat="imgcat $*"
 alias today="date +%Y%m%d"
 alias vs="code ."
-alias editalias="vim ${DOTPATH}/ShellConfig/aliases.sh"
-alias loadalias="source ${DOTPATH}/ShellConfig/aliases.sh"
+alias editalias="vim ${DOTPATH}/shell-config/aliases.sh"
+alias loadalias="source ${DOTPATH}/shell-config/aliases.sh"
 alias fdeploy="firebase deploy"
 function mdview(){
 	markdown $1 | lynx -stdin

@@ -5,7 +5,7 @@ export SELECT_METHOD=fzy
 export DOTPATH=${HOME}/dotfiles
 
 for f (${DOTPATH}/functions/*.zsh) source "${f}"
-for f (${DOTPATH}/ShellConfig/*.sh) source "${f}"
+for f (${DOTPATH}/shell-config/*.sh) source "${f}"
 sh ${DOTPATH}/in-place-config/link_config.sh
 source ${DOTPATH}/load-zplug.sh
 

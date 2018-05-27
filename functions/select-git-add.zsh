@@ -1,6 +1,5 @@
-function select-gitadd() {
+function select-git-add() {
     local SELECTED_FILE_TO_ADD="$(git status --porcelain | \
-#                                  peco --query "$LBUFFER" | \
                                   ${SELECT_METHOD} --prompt "git add>" | \
                                   awk -F ' ' '{print $NF}')"
     if [ -n "$SELECTED_FILE_TO_ADD" ]; then
@@ -8,8 +7,6 @@ function select-gitadd() {
       CURSOR=$#BUFFER
     fi
     zle accept-line
-   # zle clear-screen
 }
-zle -N select-gitadd
-bindkey "^g^a" select-gitadd
-#alias ga="select-gitadd"
+zle -N select-git-add
+bindkey "^g^a" select-git-add

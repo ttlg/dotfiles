@@ -37,9 +37,16 @@ alias gen="npm run generate"
 alias yanr="yarn"
 alias ccat="ccat --color=always --bg=dark"
 alias cc="ccat --color=always --bg=dark"
+alias cat="ccat --color=always --bg=dark"
 alias icat="imgcat $*"
 alias today="date +%Y%m%d"
-alias vs="code ."
+function vs () {
+  if [ -n "${1}" ]; then
+    code .
+  else
+    code $*
+  fi
+}
 alias editalias="vim ${DOTPATH}/shell-config/aliases.sh"
 alias loadalias="source ${DOTPATH}/shell-config/aliases.sh"
 alias fdeploy="firebase deploy"

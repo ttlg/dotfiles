@@ -53,6 +53,7 @@ alias fdeploy="firebase deploy"
 function mdview(){
 	markdown $1 | lynx -stdin
 }
+alias transi="trans -I ${*}"
 
 ### git
 alias g="git"

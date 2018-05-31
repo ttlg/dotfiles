@@ -30,13 +30,6 @@ alias dt="cd ~/Desktop"
 alias dl="cd ~/Downloads"
 
 ##### Advanced
-function ss () {
-  local platform
-  platform="$(s -l | fzy)"
-  if [ -n "${platform}" ]; then
-    s -p ${platform} ${*}
-  fi
-}
 alias wx="curl -4 wttr.in/Tokyo"
 alias edithosts="sudo vi /private/etc/hosts"
 alias dev="yarn dev"

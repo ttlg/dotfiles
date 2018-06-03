@@ -50,6 +50,7 @@ function vs () {
 alias editalias="vim ${DOTPATH}/shell-config/aliases.sh"
 alias loadalias="source ${DOTPATH}/shell-config/aliases.sh"
 alias fdeploy="firebase deploy"
+alias ndeploy="netlify deploy"
 function mdview(){
 	markdown $1 | lynx -stdin
 }

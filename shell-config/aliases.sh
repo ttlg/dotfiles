@@ -55,18 +55,3 @@ function mdview(){
 }
 alias transi="trans -I ${*}"
 
-### git
-alias g="git"
-alias gi="git"
-alias gs="git status"
-alias gb="git branch"
-alias gd="git diff $*"
-alias gdc="git diff $* --cached"
-alias ga="git add $*"
-alias ga.="git add ."
-alias gc="git commit $*"
-alias gcm="git commit -m $1"
-alias gco="git checkout $*"
-alias gp="git push $*"
-alias gl="git log $*"
-

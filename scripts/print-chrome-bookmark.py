@@ -3,6 +3,7 @@
 
 import os
 import json
+import sys
 
 
 def is_folder(obj):
@@ -36,4 +37,8 @@ def format_bookmark(obj):
 
 formatted_bookmark = list(map(lambda obj: format_bookmark(obj), bookmark_list))
 for bookmark in formatted_bookmark:
-    print(bookmark.encode('utf-8'))
+    if (3, 0) < sys.version_info:
+        print(bookmark)
+    else:
+        print(bookmark.encode('utf-8'))
+

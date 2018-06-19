@@ -54,5 +54,6 @@ alias ndeploy="netlify deploy"
 function mdview(){
 	markdown $1 | lynx -stdin
 }
-alias transi="trans -I ${*}"
+alias trans="trans -I ${*}"
+alias transj="trans -I :ja ${*}"
 

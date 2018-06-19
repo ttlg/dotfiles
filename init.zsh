@@ -1,5 +1,8 @@
 autoload -Uz add-zsh-hook
 autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
+autoload -U promptinit; promptinit
+
+prompt pure
 
 export SELECT_METHOD=fzy
 export DOTPATH=${HOME}/dotfiles

@@ -4,7 +4,7 @@ if [ -e ${DOTPATH}/zplug ];then
 	zplug 'zsh-users/zsh-completions'
 	zplug 'zsh-users/zsh-syntax-highlighting'
 	zplug "plugins/git", from:oh-my-zsh
-	zplug "b4b4r07/enhancd", use:init.sh
+#	zplug "b4b4r07/enhancd", use:init.sh
 
 	if ! zplug check --verbose; then
 	  printf 'Install? [y/N]: '

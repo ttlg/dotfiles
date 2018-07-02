@@ -33,12 +33,12 @@ def format_bookmark(obj):
         formatted_text += obj['name']
     if 'url' in obj:
         formatted_text += ' | ' + obj['url']
-    return formatted_text
-
-formatted_bookmark = list(map(lambda obj: format_bookmark(obj), bookmark_list))
-for bookmark in formatted_bookmark:
     if (3, 0) < sys.version_info:
-        print(bookmark)
+        return formatted_text
     else:
-        print(bookmark.encode('utf-8'))
+        return formatted_text.encode('utf-8')
+
+formatted_bookmark = [format_bookmark(obj) for obj in bookmark_list]
+for bookmark in formatted_bookmark:
+    print(bookmark)
 

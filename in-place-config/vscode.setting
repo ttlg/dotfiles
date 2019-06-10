@@ -25,6 +25,7 @@
         "suppressWelcomeNotice": true
     },
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "terminal.integrated.shell.osx": "/bin/zsh",
     "workbench.colorTheme": "Monokai",
     "window.zoomLevel": 0,
     "[dart]": {

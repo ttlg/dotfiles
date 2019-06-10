@@ -30,6 +30,7 @@ alias dt="cd ~/Desktop"
 alias dl="cd ~/Downloads"
 
 ##### Advanced
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --ignore-certificate-errors &> /dev/null &"
 alias wx="curl -4 wttr.in/Tokyo"
 alias edithosts="sudo vi /private/etc/hosts"
 alias dev="yarn dev"

@@ -24,6 +24,13 @@
         "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
     },
+    "eslint.autoFixOnSave": true,
+	"eslint.validate": [
+	    "javascript",
+	    { "language": "vue", "autoFix": true },
+	    { "language": "typescript", "autoFix": true },
+	],
+    "vetur.experimental.templateInterpolationService": true,
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "terminal.integrated.shell.osx": "/bin/zsh",
     "workbench.colorTheme": "Monokai",

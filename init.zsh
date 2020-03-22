@@ -18,3 +18,8 @@ for f (${DOTPATH}/shell-config/*.sh) source "${f}"
 sh ${DOTPATH}/in-place-config/link_config.sh
 
 prompt pure
+
+# CTRL-y to exec command
+bindkey '^y' autosuggest-execute
+
+

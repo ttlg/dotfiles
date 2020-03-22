@@ -58,4 +58,5 @@ function mdview(){
 alias trans="trans -I ${*}"
 alias transj="trans -I :ja ${*}"
 alias f="flutter"
+alias gc="gitmoji -c"
 

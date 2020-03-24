@@ -37,5 +37,9 @@
     "window.zoomLevel": 0,
     "[dart]": {
         "editor.formatOnSave": true
-    }
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.minimap.enabled": false
 }

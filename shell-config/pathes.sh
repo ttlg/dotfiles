@@ -15,6 +15,8 @@ export FLUTTER_FRAMEWORK_DIR="$HOME/Library/flutter/bin/cache/artifacts/engine/i
 
 # Rust
 export PATH=${HOME}/.cargo/bin:${PATH}
+export PATH="$HOME/.cargo/env:$PATH"
+
 
 # Nodebrew
 export PATH="$PATH:$HOME/.nodebrew/current/bin"
@@ -24,6 +26,9 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 
 # Flutter
 export PATH="$PATH":"$HOME/Library/flutter/.pub-cache/bin"
+
+# Solana
+export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
 
 # pyenv
 if [ -e $HOME/.pyenv ];then
@@ -40,6 +45,6 @@ export PATH=$PATH:$GOROOT/bin
 
 eval "$(rbenv init -)" 
 
-
+PATH="$PATH":"$HOME/.pub-cache/bin"
 
 

@@ -8,4 +8,4 @@ brew install eitmoji
 brew install fzy
 chsh -s /bin/zsh 
 curl -L git.io/antigen > antigen.zsh
-
+brew install --cask fig

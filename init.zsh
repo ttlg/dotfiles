@@ -1,5 +1,6 @@
 autoload -Uz add-zsh-hook
 autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
+fpath+=($HOME/.zsh/pure)
 autoload -U promptinit; promptinit
 
 

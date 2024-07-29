@@ -7,7 +7,6 @@ autoload -U promptinit; promptinit
 export SELECT_METHOD=fzy
 export DOTPATH=${HOME}/dotfiles
 
-source ${DOTPATH}/antigen.zsh
 source ${DOTPATH}/load-antigen.sh
 
 if [ -e ${DOTPATH}/private/.zshrc ];then

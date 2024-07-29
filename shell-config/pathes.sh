@@ -10,8 +10,9 @@ export PATH="$HOME/Library/Android/sdk/tools/bin:$PATH"
 export PATH="$HOME/Library/Android/sdk/tools/:$PATH"
 
 # Flutter
-export PATH="$HOME/Library/flutter/bin:$PATH"
-export FLUTTER_FRAMEWORK_DIR="$HOME/Library/flutter/bin/cache/artifacts/engine/ios"
+export PATH="$HOME/development/flutter/bin:$PATH"
+export FLUTTER_FRAMEWORK_DIR="$HOME/development/flutter/bin/cache/artifacts/engine/ios"
+export PATH="$PATH":"$HOME/development/flutter/.pub-cache/bin"
 
 # Rust
 export PATH=${HOME}/.cargo/bin:${PATH}
@@ -23,9 +24,6 @@ export PATH="$PATH:$HOME/.nodebrew/current/bin"
 
 # VSCode
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
-# Flutter
-export PATH="$PATH":"$HOME/Library/flutter/.pub-cache/bin"
 
 # Solana
 export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
@@ -43,6 +41,7 @@ export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)" 
 
 PATH="$PATH":"$HOME/.pub-cache/bin"
